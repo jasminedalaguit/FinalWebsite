@@ -97,6 +97,11 @@ nav ul li a{
 	z-index: 3;
 	cursor: pointer;
 }
+#menuBtn a{
+	margin-top: 15px;
+	margin-left: auto;
+	color: white;
+}
 #menuBtn img{
 	width: 40px;
 	margin-top: 15px;
