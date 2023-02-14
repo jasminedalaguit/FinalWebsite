@@ -86,7 +86,6 @@ nav ul li a{
 	color: white;
 }
 #menuBtn{
-	height: 50px;
 	text-align: center;
 	position: fixed;
 	right: 30px;
@@ -95,10 +94,17 @@ nav ul li a{
 	z-index: 3;
 	cursor: pointer;
 }
-#menuBtn a{
-	margin-top: 15px;
-	right: 50px;
-	color: white;
+#menuBtn a button {
+	position: relative;
+	right: 200px;
+	border-style: groove;
+	border-color: #034684;
+	color:  #034684;
+	padding: 15px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 }
 #menuBtn img{
 	width: 40px;
