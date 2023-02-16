@@ -1,0 +1,8 @@
+1. Login 
+   - check username and password if valid (exists & username and password match)
+   - if match -> redirect to admin panel
+2. Admin panel or page
+	- add books	
+	- edit books
+	- update book
+	- delete book
