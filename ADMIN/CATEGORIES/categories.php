@@ -10,7 +10,7 @@
 <body>
     <div class="container my-5">
     <h2>The Categories</h2>
-    <a class="btn btn-primary" href="/NewUsingPHP/BOOKS/books.php" role="button">New Category</a>
+    <a class="btn btn-primary" href="/NewUsingPHP/ADMIN/CATEGORIES/categories.php" role="button">New Category</a>
     <br>
         <table class="table">
             <thead>
