@@ -39,7 +39,7 @@
                 $sql = "SELECT * FROM users"; // users = table name in the database
                 $result = $con->query($sql);
 
-                if ($result){
+                if (!$result){
                     die("Invalid query: " . $con->error);
                 }
 
