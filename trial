@@ -1,0 +1,24 @@
+<?php
+$con = mysqli_connect('localhost', 'jasmine', 'JP@ssw0rd', 'librarysystem');
+
+if($con === false){
+    die("ERROR: " . mysqli_connect_error());
+}
+
+$username ="";
+
+if($_POST){
+    if(isset($_POST['username'])){
+    $username = $_POST['username'];
+    }
+}
+    
+$sql = "SELECT * FROM users WHERE username='$username', password='$password'";
+$result = mysqli_query($con,$sql);
+$row = mysqli_fetch_assoc($result);
+
+if(mysqli_query($con,$sql)){
+    die("ERROR: " . mysqli_connect_error());
+}
+
+?>
