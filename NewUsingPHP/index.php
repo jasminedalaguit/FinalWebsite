@@ -12,6 +12,7 @@
 	<div class="login">
 	<img src="images/j-lib-logos_white.png" class="logo"/>
 	<ul>
+		<li> <a href="signup.php"> <button> SIGN UP </button> </a> </li>
 		<li> <a href="login.php"> <button> LOGIN </button> </a> </li>
 	</ul>
 </div>
@@ -19,11 +20,35 @@
  		<h1> THE LIBRARY </h1>
 		<p>Book Recommendations For Free </p>
 		<div class="banner-btn"/> 
-			<a href="academic/index.html"/><span></span> ACADEMIC </a>
-			<a href="#"/><span></span> ROMANCE </a>
-			<a href="#"/><span></span> FANTASY </a>
-			<a href="#"/><span></span> SUSPENSE </a>
-			<a href="#"/><span></span> HORROR </a>
+		<?php 
+                $servername = "localhost";
+                $username = "jasmine";
+                $password = "JP@ssw0rd";
+                $database = "librarysystem";
+                
+                // Create connection
+                $con = new mysqli($servername,$username,$password,$database); # or it can be mysqli_connect($servername, $username, $password, $database);
+
+                // Check connection
+                if ($con->connect_error){
+                    die("Failed to connect: " . $con->connect_error);
+                }
+
+                //read all row from database table 
+                $sql = "SELECT * FROM categories"; // categories = table name in the database librarysystem
+                $result = $con->query($sql); # or it can be mysqli_query($con,$sql); 
+
+                if (!$result){
+                    die("Invalid query: " . $con->error);
+                }
+
+                //read data of each row 
+                while($row = $result->fetch_assoc()){
+                    echo"
+					<a href='academic/index.php?category_id=$row[id]'><span></span>$row[category_name]</a>
+                    ";
+                }
+                ?>
 		</div>
 	</div>
 </section>

@@ -22,9 +22,8 @@ body{
 	margin: 0;
 }
 .login ul li button{
-	padding: 10px 24px;
+	padding: 10px 20px;
 	color: #034684;
-	background-color: #efefef;
 }
 .logo{
 	width: 250px;

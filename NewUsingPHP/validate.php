@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
 	$username = test_input($_POST["username"]);
 	$password = test_input($_POST["password"]);
-	$stmt = $conn->prepare("SELECT * FROM users");
+	$stmt = $conn->prepare("SELECT * FROM users WHERE username='$username' AND password='$password'");
 	$stmt->execute();
 	$users = $stmt->fetchAll();
 	
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		
 		if(($user['username'] == $username) &&
 			($user['password'] == $password)) {
-				header("location: /NewUsingPHP/admin/books.php");
+				header("location: /NewUsingPHP/admin/categories/categories.php");
 		}
 		else {
 			echo "<script language='javascript'>";
@@ -34,3 +34,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 ?>
+
