@@ -18,7 +18,7 @@ session_start();
         $lastname = $_POST["lastname"];
         $email = $_POST["email"];
         $username = $_POST["username"];
-        $password = $_POST["password"];
+        $password = $_POST['password'];
         }
         do { # we did do loop for the instruction or group of instructions to be executed repeatedly once true 
             if (empty($firstname) || empty($lastname) || empty($email) || empty($username) || empty($password)){
@@ -27,7 +27,7 @@ session_start();
             }
             // save to database
 
-            $sql = "INSERT into users (firstname, lastname, email, username, password, created_at) values ('$firstname', '$lastname', '$email', '$username','$password', now())";
+            $sql = "INSERT into users (firstname, lastname, email, username, password, created_at) values ('$firstname', '$lastname', '$email', '$username', MD5('".$password."'), now())";
             $result = $con->query($sql);
             if (!$result){
                 $errorMessage = "Invalid query: " . $con->error;
@@ -53,7 +53,7 @@ session_start();
     <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>Signup</title>
+    <title>Sign Up</title>
     <style>
         body{
             background-color: #034684;
@@ -110,6 +110,7 @@ session_start();
     <h1>SIGN UP</h1>
     <a class="btn btn-primary" href="/NewUsingPHP/index.php" role="button">Back to Homepage</a>
     <a style="margin-left: 75%;" class="btn btn-primary" href="/NewUsingPHP/login.php" role="button">Login</a>
+    <div class="form-container">
     <?php 
         if (!empty($errorMessage)){
             echo "
@@ -120,7 +121,6 @@ session_start();
             ";
         }
     ?>
-    <div class="form-container">
         <form method="post">
             <div class="form-group input-element">
                 <input type="text" class="form-control" name="firstname" placeholder="First Name">
