@@ -1,0 +1,31 @@
+.banner-text{
+	text-align: center;
+	color: white;
+	padding-top: 30px;
+}
+.banner-text h1{
+	font-size: 130px;
+	font-family: times new roman;
+	word-spacing: 70px;
+	line-height: 0.15px;
+	text-shadow: 5px 5px 5px #6E2C00;
+}
+.banner-text p{
+	font-size: 30px;
+	font-family: times new roman;
+	font-style: italic;
+	margin: 0;
+	padding-bottom: 100px;
+	padding-top: -20px;
+}
+@media screen and (max-width: 770px){
+	.banner-text h1{
+	font-size: 44px;
+	word-spacing: 20px;
+	padding-top: 10px;	
+}
+	.banner-text p{
+	font-size: 20px;
+	padding-bottom: 15px;
+	}
+}
