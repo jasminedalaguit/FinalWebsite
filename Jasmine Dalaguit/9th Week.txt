@@ -1,0 +1,7 @@
+9th Week
+
+difference between snapshot and observable/paramMap
+snapshot does not perform the switch of values or content,
+while paramMap does.
+
+ a map of the required and optional parameters specific to the route. The map supports retrieving single and multiple values from the same parameter.

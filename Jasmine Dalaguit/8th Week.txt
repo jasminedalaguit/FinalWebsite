@@ -1,0 +1,26 @@
+8th Week
+
+03/27/2023
+
+pdf upload (new controller for the pdf/file, then 
+in the book controller I send the file through file_id)
+
+Send the file first in a multipart/form-data POST, 
+and return an ID to the client. The client then sends 
+the metadata with the ID, and the server re-associates 
+the file and the metadata.
+
+03/28/2023
+
+ng generate service
+ng generate interface
+trying to configure angularjs http service to fetch api from lumen
+
+03/29/2023
+get ALL books
+get ALL categories
+create categories
+
+03/30/2023 
+delete books
+delete category

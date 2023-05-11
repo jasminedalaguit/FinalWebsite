@@ -1,0 +1,12 @@
+ const File = this.reactiveForm.get('File').value;
+    this.booksService.uploadBooks(File).subscribe(data => {
+      console.log(data)
+        if(data = true) {
+          const bookData = [{book_title: this.reactiveForm.get('book_title').value}, 
+                            {author: this.reactiveForm.get('author').value}, 
+                            {category_id: this.reactiveForm.get('category_id').value},
+                            {file_id: this.reactiveForm.get('file_id').value} ];
+            return this.http.post('http://localhost:8000/books/create', bookData).subscribe();
+          
+        }
+      });

@@ -1,0 +1,192 @@
+ 1  su
+    2  sudo
+    3  sudo -i
+    4  su
+    5  su
+    6  cd /var/www/html/
+    7  ll
+    8  touch world.php
+    9  su
+   10  ls -la
+   11  code --help
+   12  exit
+   13  code --help
+   14  touch test.php
+   15  code test.php
+   16  code --help
+   17  code test.php
+   18  ls -la
+   19  cd /var/www/html/
+   20  ls -la
+   21  code .
+   22  sudo chmod -R 777 .
+   23  ll
+   24  cd
+   25  mysql
+   26  php
+   27  ls
+   28  service apache2 stop
+   29  service apache2 status
+   30  service apache2 stop
+   31  service apache2 status
+   32  sudo service apache2 stop
+   33  sudo service apache2 status
+   34  sudo service apache2 start
+   35  pwd
+   36  cd /var/www/html/
+   37  git clone https://github.com/jasminedalaguit/FinalWebsite.git LibrarySystem
+   38  d
+   39  cd
+   40  sudo service apache2 stop
+   41  sudo service apache2 start
+   42  ls -al
+   43  nano .profile
+   44  lampstop
+   45  history
+   46  sudo service apache2 start
+   47  cd /var/www/html/
+   48  cat hello.php
+   49  lampstop
+   50  lampstart
+   51  cd /etc/php/8.0/
+   52  ls la
+   53  ll
+   54  cd apache2/
+   55  ll
+   56  code php.ini
+   57  su
+   58  lampstop
+   59  lampstart
+   60  ll
+   61  cd t
+   62  cat test.php
+   63  nano
+   64  ls
+   65  ls -R
+   66  nano
+   67  service apache2 status
+   68  cd /var/www/html/
+   69  ll
+   70  cd LibrarySystem/
+   71  nano
+   72  cd
+   73  cd /var/www/html/
+   74  cat hello.php
+   75  cd
+   76  service apache2 start
+   77  service apache2 status
+   78  service apache2 start
+   79  service mysql start
+   80  lampstart
+   81  lampstop
+   82  lampstart
+   83  nano php.ini
+   84  ll
+   85  code test.php
+   86  mv test.php /var/www/html/
+   87  cd /var/www/html/
+   88  ll
+   89  cd db
+   90  touch new.php
+   91  ll
+   92  code new.php
+   93  rm new.php
+   94  ll
+   95  cd
+   96  ls -R
+   97  ll
+   98  code test.php
+   99  cd /var/www/html/
+  100  ll
+  101  cd
+  102  ll
+  103  rm test.php
+  104  ll
+  105  rm php.ini
+  106  ll
+  107  cd /var/www/html/
+  108  ll
+  109  cd
+  110  ll
+  111  cd /var/www/html/
+  112  ll
+  113  cd LibrarySystem/
+  114  touch romance
+  115  ll
+  116  cd r
+  117  rm romance
+  118  ll
+  119  cat romance
+  120  cat > romance
+  121  ll
+  122  cd romance
+  123  -bash romance
+  124  ll
+  125  rm romance
+  126  ll
+  127  cd academic/
+  128  ll
+  129  rm fantasy/
+  130  rm -r fantasy/
+  131  ll
+  132  cd ..
+  133  mkdir fantasy
+  134  ll
+  135  mkdir suspense
+  136  mkdir horror
+  137  ll
+  138  cd academic/
+  139  ll
+  140  cd ..
+  141  ll
+  142  cd romance/
+  143  touch index.html
+  144  ll
+  145  cd ..
+  146  cd fantasy/
+  147  ll
+  148  touch index.html
+  149  ll
+  150  cd ..
+  151  cd suspense/
+  152  touch index.html
+  153  ll
+  154  cd ..
+  155  cd horror/
+  156  touch index.html
+  157  ll
+  158  ls
+  159  cd ..
+  160  ls
+  161  ll
+  162  ls -R
+  163  cd ..
+  164  ll
+  165  touch new.php
+  166  ll
+  167  code new.php
+  168  rm new.php
+  169  ll
+  170  git clone https://github.com/jasminedalaguit/FinalWebsite.git NewUsingPHP
+  171  code NewUsingPHP/
+  172  ls
+  173  ll
+  174  code NewUsingPHP/
+  175  cd
+  176  service apache2 status
+  177  service mysql status
+  178  lampstart
+  179  cd /var/www/html/
+  180  ll
+  181  cd NewUsingPHP/
+  182  ll
+  183  touch phpstyle.css
+  184  ll
+  185  rm phpstyle.css
+  186  ll
+  187  touch style.php
+  188  ll
+  189  rm style.php
+  190  ll
+  191  cd
+  192  history

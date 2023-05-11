@@ -1,0 +1,32 @@
+7th Week
+
+03/20/2023
+
+*Created my project using Laravel-Lumen and serve its application
+
+*Created Model 
+-php artisan make:model ModelName -m (-m migration)
+
+*Created migration table
+-php artisan migrate
+
+*Created a controller
+-php artisan make:controller ControllerName
+
+03/21/2023
+
+*Created api for categories
+-controller
+-model -migration
+
+*Created api for signup
+-controller
+-model -migration
+
+*Debug the error <!-- Class &quot;App\Models\Category &quot; not found (500 Internal Server Error) -->
+
+03/22/2023
+*Authentication
+*md5password
+*pdf upload --hold
+*Created api for books

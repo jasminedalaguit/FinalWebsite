@@ -1,0 +1,1000 @@
+ 548  cd js/library-app/src/app/home/
+  549  ng g m signup --routing --flat
+  550  ng g c signup module="signup"
+  551  ng g c signup --module="signup"
+  552  cd components/
+  553  ll
+  554  cd ..
+  555  ll
+  556  ng g c login
+  557  cd ..
+  558  ll
+  559  ng g m login --routing
+  560  ll
+  561  cd login/
+  562  ng g c login
+  563  ng g c login --flat
+  564  cd ..
+  565  ng g m signup --routing
+  566  cd signup/
+  567  ng g c signup --flat
+  568  ng g m auth --routing
+  569  ll
+  570  cd src/app/
+  571  ll
+  572  cd auth/
+  573  ng g c signup
+  574  ng g c login
+  575  ng g m categories --routing
+  576  cd ..
+  577  ng g m categories --routing
+  578  cd categories/
+  579  ng g c academic
+  580  ng g c romance
+  581  ng g c fantasy
+  582  ng g c horror
+  583  ng g c suspense
+  584  lampstart
+  585  cd js/library-app
+  586  ng s
+  587  ng s -o
+  588  angular material
+  589  ng s -o
+  590  lampstart
+  591  cd js/library-app
+  592  ng s -o
+  593  code .
+  594  ng s -o
+  595  ng g c header
+  596  ll
+  597  cd src/app/
+  598  ll
+  599  cd header/
+  600  ng g m header --routing --flat
+  601  cd ..
+  602  cd
+  603  cd js/library-app/src/app/
+  604  ll
+  605  ng g m header --routing
+  606  cd header/
+  607  ng g c header --flat
+  608  cd src/app/
+  609  ng g m header --routing
+  610  cd header/
+  611  ng g c header --flat
+  612  cd
+  613  cd js/library-app/src/app/
+  614  clear
+  615  ng g m header --routing
+  616  cd header/
+  617  ng g c header
+  618  cd ..
+  619  cd header/
+  620  ng g c header --flat
+  621  cd src/app/
+  622  ng g c header
+  623  ng g m admin --routing
+  624  cd admin/
+  625  ll
+  626  ng g c categories
+  627  ng g c books
+  628  cd categories/
+  629  ng g c categories
+  630  cd ..
+  631  cd books/
+  632  ng g c books
+  633  ll
+  634  cd..
+  635  cd ..
+  636  ll
+  637  cd categories/
+  638  ng g c create
+  639  ng g c edit
+  640  ng g c delete
+  641  cd ..
+  642  cd books/
+  643  ng g c create
+  644  ng g c edit
+  645  ng g c delete
+  646  ng g c addbooks
+  647  ng g c updatebooks
+  648  ng g c deletebooks
+  649  ll
+  650  ng g c createbooks
+  651  ng g c editbooks
+  652  cd ..
+  653  ll
+  654  cd auth/
+  655  ll
+  656  ng g c logout
+  657  cd ..
+  658  ll
+  659  ng g c links
+  660  exit
+  661  kill-port 4200
+  662  ng serve
+  663  ng serve --help
+  664  ng serve --verbose
+  665  kill-port 4200
+  666  ng serve
+  667  kill-port 4200 && ng s -o
+  668  ng s -o
+  669  lampstart
+  670  cd js/library-app
+  671  code .
+  672  ng s -o
+  673  clear
+  674  ng s -o
+  675  code .
+  676  ng s -o
+  677  lampstop
+  678  npm i -g kill-port
+  679  kill-port 4200
+  680  ng s -o
+  681  lampstart
+  682  PHP -V
+  683  php -v
+  684  composer
+  685  cd ~
+  686  curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+  687  HASH=`curl -sS https://composer.github.io/installer.sig`
+  688  echo $HASH
+  689  php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+  690  HASH=`curl -sS https://composer.github.io/installer.sig`
+  691  sudo HASH=`curl -sS https://composer.github.io/installer.sig`
+  692  HASH=`curl -sS https://composer.github.io/installer.sig`
+  693  echo $HASH
+  694  php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+  695  sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+  696  composer
+  697  ls
+  698  ls -al
+  699  mkdir php
+  700  cd php/
+  701  composer create-project --prefer-dist laravel/lumen library-app
+  702  ls -al
+  703  cd /var/www/html/
+  704  mkdir test
+  705  cd test/
+  706  code .
+  707  cd /etc/php/8.0/apache2/
+  708  ls -al
+  709  cat php.ini
+  710  nano php.ini
+  711  sudo nano php.ini
+  712  lampstop
+  713  lampstart
+  714  cd ..
+  715  cd cli/
+  716  sudo nano php.ini
+  717  cd php/
+  718  code .
+  719  ls
+  720  cd library-app-api/
+  721  code .
+  722  history
+  723  clear
+  724  echo $HASH
+  725  cd php/
+  726  composer create-project --prefer-dist laravel/lumen blog
+  727  composer diagnose
+  728  composer config disable-tls true
+  729  curl
+  730  sudo apt install php8.0-curl
+  731  sudo apt-get update
+  732  sudo apt install php8.0-curl
+  733  lampstop
+  734  lampstart
+  735  composer create-project --prefer-dist laravel/lumen library-app-api
+  736  ls -al
+  737  cd library-app-api/
+  738  ls -al
+  739  composer update
+  740  sudo apt-get install php8.0-mbstring
+  741  composer update
+  742  lampstop
+  743  lampstart
+  744  composer update
+  745  sudo apt-get install php8.0-xml
+  746  composer update
+  747  php -S localhost:8000 -t public
+  748  cd js/library-app
+  749  code .
+  750  cd
+  751  cd /var/www/html/
+  752  ll
+  753  cd NewUsingPHP/
+  754  code .
+  755  cd
+  756  cd js/library-app
+  757  ng s -o
+  758  cd php/
+  759  ll
+  760  cd library-app-api/
+  761  generator
+  762  lumen generator
+  763  api
+  764  php artisan s
+  765  php artisan serve
+  766  cd php/
+  767  cd library-app-api/
+  768  php artisan serve
+  769  cd
+  770  cd js/library-app
+  771  ng s -o
+  772  composer require flipbox/lumen-generator
+  773  php artisan
+  774  composer require flipbox/lumen-generator
+  775  php artisan
+  776  php artisan serve
+  777  php artisan
+  778  php artisan make:model users -m
+  779  php artisan migrate
+  780  php artisan make:controller UserController
+  781  php artisan make:controller UserController --resource
+  782  php artisan make:controller CategoriesController --resource
+  783  php artisan make:controller BooksController --resource
+  784  php artisan make:controller Auth
+  785  php artisan make:controller AuthController
+  786  php artisan migrate
+  787  php artisan migrate --help
+  788  php artisan make --help
+  789  history
+  790  php artisan make:model -m --resource
+  791  php artisan make:model Users -m --resource
+  792  cd php/library-app-api/
+  793  php -S localhost:8000 -t public
+  794  php artisan serve
+  795  lampstart
+  796  cd php/
+  797  cd library-app-api/
+  798  code .
+  799  php artisan serve
+  800  cd
+  801  cd js/library-app
+  802  ng s -o
+  803  cd php/
+  804  cd library-app-api/
+  805  cd ..
+  806  rmdir library-app-api/
+  807  rm -r library-app-api/
+  808  ll
+  809  history
+  810  composer create-project --prefer-dist laravel/lumen library-app-api
+  811  ll
+  812  cd library-app-api/
+  813  code .
+  814  cd
+  815  cd js/library-app
+  816  ng s -o
+  817  cd js
+  818  cd library-app
+  819  code .
+  820  cd
+  821  lampstart
+  822  cd php/
+  823  ll
+  824  cd library-app-api/
+  825  code .
+  826  php artisan serve
+  827  php ini
+  828  php.ini
+  829  nano
+  830  php artisan
+  831  composer require flipbox/lumen-generator
+  832  php artisan
+  833  php artisan make:model Users -m
+  834  php artisan migrate
+  835  php artisan make:controller AuthController --resource
+  836  php artisan make:model User -m
+  837  php artisan
+  838  php artisan make:migration
+  839  php artisan make:migration user
+  840  php artisan migrate
+  841  php artisan make:migration user --resource
+  842  php artisan make:migration user
+  843  php artisan make:model Mode -m
+  844  clear
+  845  php artisan make:model User -m
+  846  php artisan migrate
+  847  php artisan make:controller CategoriesController --resource
+  848  php artisan make:model Category -m
+  849  php artisan migrate
+  850  php artisan make:model Category -m
+  851  php artisan migrate
+  852  php artisan make:model Sample
+  853  php artisan make:model Book -m
+  854  php artisan make:controller BooksController --resource
+  855  php artisan migrate
+  856  php -i | grep 'post_max_file' ,post_max_size => 20M => 20M
+  857  php -i | grep
+  858  php -i | grep --help
+  859  php -i | grep -f
+  860  /etc/php/8.0/fpm/php.ini.
+  861  -bash: /etc/php/8.0/fpm/php.ini
+  862  /etc/php/8.0/cli/php.ini
+  863  /etc/php
+  864  php --ini
+  865  /etc/php/8.0/cli/conf.d/20-fileinfo.ini
+  866  upload_max_filesize
+  867  sudo php.ini
+  868  grep php.ini
+  869  sudo nano /etc/php/8.0/apache2
+  870  sudo nano /etc/php/8.0/apache2/php.ini
+  871  sudo apachectl restart
+  872  sudo nano /etc/php/8.0/apache2/php.ini
+  873  php artisan help
+  874  php artisan --hep
+  875  cd php/library-app-api/
+  876  php artisan --help
+  877  php artisan list
+  878  cd js/library-app
+  879  ng s -o
+  880  cd php/library-app-api/
+  881  php artisan serve
+  882  cd
+  883  lampstop
+  884  php artisan make:controller AuthController --resource
+  885  php artisan make:model Auth -m
+  886  php artisan migrate
+  887  lampstart
+  888  cd js/library-app
+  889  ng s -o
+  890  cd js/library-app
+  891  code .
+  892  cd
+  893  cd php/library-app-api/
+  894  code .
+  895  cd
+  896  cd /var/www/html/NewUsingPHP/
+  897  code .
+  898  cd
+  899  cd php/library-app-api/
+  900  php artisan serve
+  901  composer  require --dev  league/flysystem
+  902  php artisan serve
+  903  kill-port 8000
+  904  php artisan serve
+  905  lampstart
+  906  cd js/library-app
+  907  ng s -o
+  908  code .
+  909  ng s -o
+  910  cd php/library-app-api/
+  911  php artisan serve
+  912  cd php/library-app-api/
+  913  code .
+  914  cd ..
+  915  cd
+  916  cd php/library-app-api/
+  917  php artisan serve
+  918  cd js/library-app
+  919  ng s -o
+  920  cd js/library-app
+  921  code .
+  922  cd
+  923  cd php/library-app-api/
+  924  code .
+  925  cd
+  926  lampstart
+  927  history
+  928  sudo nano /etc/php/8.0/apache2/php.ini
+  929  php --ini
+  930  /etc/php/8.0/cli/conf.d/20-fileinfo.ini
+  931  sudo vi /etc/php/8.0/cli/conf.d/20-fileinfo.ini,
+  932  sudo vim /etc/php/8.0/cli/conf.d/20-fileinfo.ini
+  933  sudo /etc/php/8.0/cli/php.ini
+  934  sudo nano /etc/php/8.0/cli/php.ini
+  935  sudo vi /etc/php/8.0/conf.d/php-memory-limits.ini
+  936  sudo nano /etc/php/8.0/cli/php.ini
+  937  $ sudo cp /etc/php.ini.default /etc/php.ini
+  938  php -i | grep php.i
+  939  sudo nano /etc/php/8.0/cli/php.ini
+  940  sudo /etc/init.d/apache2 restart
+  941  lampstart
+  942  sudo nano /etc/php/8.0/cli/php.ini
+  943  history
+  944  cd php/library-app-api/
+  945  php artisan serve
+  946  cd js/library-app
+  947  cd
+  948  lampstart
+  949  cd js/library-app
+  950  ng s -o
+  951  history
+  952  cd js/library-app
+  953  code .
+  954  cd
+  955  cd php/library-app-api/
+  956  code .
+  957  cd
+  958  cd php/library-app-api/
+  959  php artisan serve
+  960  lampstart
+  961  cd js/library-app
+  962  ng s -o
+  963  php artisan make:controller MetadataController --resource
+  964  php artisan make:model Metadata -m
+  965  php artisan migrate
+  966  php artisan make:controller FileController --resource
+  967  cd js/library-app
+  968  code .
+  969  cd
+  970  cd php/library-app-api/
+  971  code .
+  972  php artisan
+  973  cd src/app/services/
+  974  ng g s data
+  975  cd ..
+  976  cd admin/categories/
+  977  ng g s categories
+  978  ll
+  979  cd categories/
+  980  ng g i categories
+  981  ng g s categories
+  982  ng g i categories
+  983  cd ..
+  984  cd create/
+  985  ng g s create
+  986  ng g i create
+  987  cd php/library-app-api/
+  988  php artisan serve
+  989  lampstart
+  990  cd js/library-app
+  991  ng s -o
+  992  cd src/app/admin/books/services/
+  993  ng g i books.interface
+  994  ng g s BooksService
+  995  ng g s Books
+  996  cd /var/www/html/NewUsingPHP/
+  997  code .
+  998  cd js/library-app
+  999  ng s -o
+ 1000  composer require fruitcake/laravel-cors
+ 1001  composer remove barryvdh/laravel-cors fruitcake/laravel-cors
+ 1002  composer require fruitcake/laravel-cors
+ 1003  sudo -i
+ 1004  lampstart
+ 1005  cd php/library-app-api/
+ 1006  code .
+ 1007  php artisan serve
+ 1008  ng g s signup
+ 1009  ng g i signup
+ 1010  cd src/app/auth/
+ 1011  ll
+ 1012  cd signup/services/
+ 1013  ll
+ 1014  ng g i signup.interface
+ 1015  cd ..
+ 1016  cd log
+ 1017  ll
+ 1018  cd login/
+ 1019  ng g s login
+ 1020  cd services/
+ 1021  ng g i login.interface
+ 1022  cd /var/www/html/NewUsingPHP/
+ 1023  code .
+ 1024  cd php/library-app-api/
+ 1025  php artisan serve
+ 1026  lampstart
+ 1027  cd php/library-app-api/
+ 1028  code .
+ 1029  cd
+ 1030  cd /var/www/html/NewUsingPHP/
+ 1031  code .
+ 1032  cd
+ 1033  cd js/library-app
+ 1034  ng s -o
+ 1035  lampstart
+ 1036  cd js/library-app
+ 1037  code .
+ 1038  cd
+ 1039  cd php/library-app-api/
+ 1040  code .
+ 1041  cd
+ 1042  cd /var/www/html/NewUsingPHP/
+ 1043  code .
+ 1044  cd
+ 1045  cd js/library-app
+ 1046  ng s -o
+ 1047  cd php/library-app-api/
+ 1048  php artisan serve
+ 1049  lampstart
+ 1050  cd js/library-app
+ 1051  code .
+ 1052  cd
+ 1053  cd php/library-app-api/
+ 1054  code .
+ 1055  cd
+ 1056  cd /var/www/html/NewUsingPHP/
+ 1057  code .
+ 1058  cd
+ 1059  cd js/library-app
+ 1060  ng s -o
+ 1061  cd php/library-app-api/
+ 1062  php artisan serve
+ 1063  cd /var/www/html/N
+ 1064  cd /var/www/html/NewUsingPHP/
+ 1065  code .
+ 1066  lampstart
+ 1067  cd js/library-app
+ 1068  code .
+ 1069  cd
+ 1070  cd php/library-app-api/
+ 1071  code .
+ 1072  cd
+ 1073  cd /var/www/html/NewUsingPHP/
+ 1074  code .
+ 1075  cd
+ 1076  cd js/library-app
+ 1077  ng s -o
+ 1078  cd php/library-app-api/
+ 1079  php artisan serve
+ 1080  cd js/library-app
+ 1081  git status
+ 1082  git remote -v
+ 1083  git init
+ 1084  git add .
+ 1085  git status
+ 1086  git commit -m "initial commit"
+ 1087  git status
+ 1088  ssh -T git@github.com
+ 1089  ssh-keygen -t ed25519 -C "jasmine.dalaguit@ctu.edu.ph"
+ 1090  cat ~/.ssh/id_ed25519.pub
+ 1091  git log
+ 1092  git remote add origin git@github.com:jasminedalaguit/library-app-angular.git
+ 1093  git branch -M main
+ 1094  git push -u origin main
+ 1095  cd
+ 1096  cd php/library-app-api/
+ 1097  git status
+ 1098  git init
+ 1099  git status
+ 1100  git add
+ 1101  git add .
+ 1102  git status
+ 1103  git commit
+ 1104  git commit -m
+ 1105  git commit -m "initial commit"
+ 1106  git remote add origin git@github.com:jasminedalaguit/library-app-lumen.git
+ 1107  git branch -M main
+ 1108  git push -u origin main
+ 1109  lampstart
+ 1110  cd js/library-app
+ 1111  code .
+ 1112  cd
+ 1113  cd php/library-app-api/
+ 1114  code .
+ 1115  cd
+ 1116  cd /var/www/html/NewUsingPHP/
+ 1117  code .
+ 1118  cd js/library-app
+ 1119  ng s -o
+ 1120  cd php/library-app-api/
+ 1121  php artisan serve
+ 1122  cd js/library-app
+ 1123  code .
+ 1124  cd
+ 1125  cd php/library-app-api/
+ 1126  code .
+ 1127  cd
+ 1128  cd /var/www/html/NewUsingPHP/
+ 1129  code .
+ 1130  cd php/library-app-api/
+ 1131  php artisan serve
+ 1132  lampstart
+ 1133  cd js/library-app
+ 1134  code .
+ 1135  cd
+ 1136  cd php/library-app-api/
+ 1137  code .
+ 1138  cd
+ 1139  cd /var/www/html/NewUsingPHP/
+ 1140  code .
+ 1141  cd
+ 1142  cd js/library-app
+ 1143  ng s -o
+ 1144  lampstart
+ 1145  cd js/library-app
+ 1146  code .
+ 1147  cd
+ 1148  cd php/library-app-api/
+ 1149  code .
+ 1150  cd
+ 1151  cd /var/www/html/NewUsingPHP/
+ 1152  code .
+ 1153  cd
+ 1154  cd js/library-app
+ 1155  ng s -o
+ 1156  cd php/library-app-api/
+ 1157  php artisan serve
+ 1158  cd /home/
+ 1159  ll
+ 1160  cd jasmine/
+ 1161  ll
+ 1162  cd ..
+ 1163  ll
+ 1164  cd php/library-app-api/
+ 1165  php artisan serve
+ 1166  lampstart
+ 1167  cd js/library-app
+ 1168  code .
+ 1169  cd
+ 1170  cd php/library-app-api/
+ 1171  code .
+ 1172  cd
+ 1173  cd /var/www/html/NewUsingPHP/
+ 1174  code .
+ 1175  cd
+ 1176  cd js/library-app
+ 1177  ng s -o
+ 1178  cd js/library-app
+ 1179  ll
+ 1180  cd src/app/
+ 1181  ll
+ 1182  ng g c categories
+ 1183  cd categories/
+ 1184  ng g m --routing --flat
+ 1185  cd php/library-app-api/
+ 1186  php artisan serve
+ 1187  lampstart
+ 1188  cd js/library-app
+ 1189  code .
+ 1190  cd
+ 1191  cd php/library-app-api/
+ 1192  code .
+ 1193  cd
+ 1194  cd /var/www/html/NewUsingPHP/
+ 1195  code .
+ 1196  cd
+ 1197  cd js/library-app
+ 1198  ng s -o
+ 1199  cd /var/www/html/NewUsingPHP/
+ 1200  code .
+ 1201  cd
+ 1202  cd js/library-app
+ 1203  npm install ts-md5
+ 1204  npm version md5
+ 1205  /home/jasmine/.npm/_logs/2023-05-02T06_03_29_845Z-debug-0.log
+ 1206  cd
+ 1207  /home/jasmine/.npm/_logs/2023-05-02T06_03_29_845Z-debug-0.log
+ 1208  cd js/library-app
+ 1209  npm version md5
+ 1210  npm install ts-md5
+ 1211  npm audit
+ 1212  npm audit fix
+ 1213  npm install md5
+ 1214  npm version md5
+ 1215  npm install --save ts-md5
+ 1216  npm version md5
+ 1217  npm md5 version
+ 1218  npm help
+ 1219  npm version md5
+ 1220  npm version MD5
+ 1221  cd /var/www/html/NewUsingPHP/
+ 1222  code .
+ 1223  cd php/library-app-api/
+ 1224  php artisan serve
+ 1225  lampstart
+ 1226  cd js/library-app
+ 1227  code .
+ 1228  cd
+ 1229  cd php/library-app-api/
+ 1230  code .
+ 1231  cd
+ 1232  cd js/library-app
+ 1233  ng g s
+ 1234  ng s -o
+ 1235  npm install ts-md5
+ 1236  cd js/library-app
+ 1237  npm install ts-md5
+ 1238  npm version ts-md5
+ 1239  npm install md5
+ 1240  npm version md5
+ 1241  cd js/library-app
+ 1242  code .
+ 1243  cd
+ 1244  cd php/library-app-api/
+ 1245  code .
+ 1246  cd
+ 1247  cd /var/www/html/NewUsingPHP/
+ 1248  code .
+ 1249  cd php/library-app-api/
+ 1250  php artisan serve
+ 1251  lampstart
+ 1252  cd js/library-app
+ 1253  code .
+ 1254  cd
+ 1255  cd php/library-app-api/
+ 1256  code .
+ 1257  cd
+ 1258  cd /var/www/html/NewUsingPHP/
+ 1259  code .
+ 1260  cd
+ 1261  cd js/library-app
+ 1262  ng s -o
+ 1263  cd js/library-app
+ 1264  angular version
+ 1265  ng --v
+ 1266  ng --help
+ 1267  ng version
+ 1268  cd php/library-app-api/storage/app/uploads/
+ 1269  ln -s ../uploads/ ~/js/library-app/src/assets/uploads
+ 1270  cd ~/js/library-app/src/assets/
+ 1271  ls -la
+ 1272  ls -la uploads
+ 1273  cd uploads
+ 1274  ls -lh
+ 1275  rm uploads
+ 1276  ln -s ~/php/library-app-api/storage/app/uploads/ ~/js/library-app/src/assets/uploads
+ 1277  ls -la
+ 1278  cd uploads
+ 1279  ls -la
+ 1280  cd ..
+ 1281  ls -la\
+ 1282  ls -la
+ 1283  ls -la uploads
+ 1284  cd uploads
+ 1285  ls -la
+ 1286  cd ..
+ 1287  ls -la
+ 1288  rm uploads
+ 1289  ls -la
+ 1290  cd ~/php/library-app-api/
+ 1291  ls -la
+ 1292  ln -s storage/app/uploads/ public/uploads
+ 1293  cd public/
+ 1294  ls -la
+ 1295  rm uploads
+ 1296  ln -s ~/php/library-app-api/storage/app/uploads/ ~/php/library-app-api/public/uploads
+ 1297  ls -la
+ 1298  cd js/library-app
+ 1299  code .
+ 1300  cd
+ 1301  cd php/library-app-api/
+ 1302  code .
+ 1303  cd php/library-app-api/
+ 1304  php artisan serve
+ 1305  lampstart
+ 1306  cd js/library-app
+ 1307  code .
+ 1308  cd
+ 1309  cd php/library-app-api/
+ 1310  code .
+ 1311  cd
+ 1312  cd /var/www/html/NewUsingPHP/
+ 1313  code .
+ 1314  cd
+ 1315  cd js/library-app
+ 1316  ng s -o
+ 1317  cd php/library-app-api/
+ 1318  git remote add origin https://github.com/jasminedalaguit/library-app-lumen.git
+ 1319  git push -u origin master
+ 1320  git push -u
+ 1321  git init
+ 1322  git add -A
+ 1323  git commit -m 'Added my project'
+ 1324  git remote add origin https://github.com/jasminedalaguit/lumen-library-app.git
+ 1325  git branch -M main
+ 1326  cd php/library-app-api/
+ 1327  git remote add origin https://github.com/jasminedalaguit/library-app-lumen.git
+ 1328  git branch -M main
+ 1329  git push -u origin main
+ 1330  git push -u -f origin main
+ 1331  cd
+ 1332  cd js/library-app
+ 1333  git remote add origin https://github.com/jasminedalaguit/library-app-angular.git
+ 1334  git branch -M main
+ 1335  git push -u -f origin main
+ 1336  git push -u origin main
+ 1337  git init
+ 1338  git add -A
+ 1339  git commit -m 'Added my project'
+ 1340  git remote add origin git@github.com:jasminedalaguit/library-app-lumen.git
+ 1341  git remote add origin https://github.com/jasminedalaguit/library-app-angular.git
+ 1342  git push -u -f origin main
+ 1343  cd php/library-app-api/
+ 1344  php artisan version
+ 1345  php artisan help
+ 1346  php artisan -V
+ 1347  composer require tymon/jwt-auth:*
+ 1348  php artisan jwt:secret
+ 1349  php artisan jwt
+ 1350  tymon/jwt-auth
+ 1351  -bash tymon/jwt-auth
+ 1352  php artisan jwt -V
+ 1353  php artisan jwt
+ 1354  php artisan jwt:secret
+ 1355  composer require tymon/jwt-auth": "^1.0
+ 1356  php artisan jwt:secret
+ 1357  php artisan jwt: secret
+ 1358  clear config cache
+ 1359  php artisan jwt: secret
+ 1360  php artisan jwt:secret
+ 1361  php artisan config:clear
+ 1362  php artisan help
+ 1363  php artisan
+ 1364  php artisan cache:clear
+ 1365  php artisan jwt:secret
+ 1366  composer require tymon/jwt-auth": "dev-develop
+ 1367  composer fund
+ 1368  php artisan jwt:secret
+ 1369  cd php/library-app-api/
+ 1370  php artisan serve
+ 1371  lampstart
+ 1372  cd js/library-app
+ 1373  code .
+ 1374  cd
+ 1375  cd php/library-app-api/
+ 1376  code .
+ 1377  cd
+ 1378  cd /var/www/html/NewUsingPHP/
+ 1379  code .
+ 1380  cd
+ 1381  cd js/
+ 1382  cd library-app
+ 1383  ng s -o
+ 1384  php artisan migrate
+ 1385  php artisan make:seeder UsersTableSeeder
+ 1386  php artisan db:seed --class=UserTableSeeder
+ 1387  php artisan serve
+ 1388  php artisan db:seed
+ 1389  $ php artisan migrate
+ 1390  php artisan migrate
+ 1391  git status
+ 1392  git fetch origin
+ 1393  git status
+ 1394  git log
+ 1395  exit
+ 1396  cd php/library-app-api/
+ 1397  cd app/
+ 1398  ls
+ 1399  ls -la
+ 1400  mkdir Users.php
+ 1401  git log
+ 1402  code .
+ 1403  cd ..
+ 1404  ls -la
+ 1405  code .
+ 1406  cd
+ 1407  cd /var/www/html/NewUsingPHP/
+ 1408  code .
+ 1409  cd php/library-app-api/
+ 1410  php artisan jwt:secret
+ 1411  php artisan help
+ 1412  php artisan help list
+ 1413  php artisan -h
+ 1414  php artisan jwt help
+ 1415  composer list
+ 1416  php artisan version
+ 1417  composer require tymon/jwt-auth@2
+ 1418  composer require tymon/jwt-auth:2.0.0
+ 1419  php artisan jwt:secret
+ 1420  php artisan
+ 1421  ls -la
+ 1422  php artisan jwt:secret
+ 1423  php artisan config:clear
+ 1424  mkdir config
+ 1425  cp vendor/tymon/jwt-auth/config/config.php config/
+ 1426  mkdir config
+ 1427  php artisan config:clear
+ 1428  php artisan jwt:secret
+ 1429  php artisan config
+ 1430  php artisan
+ 1431  php artisan cache:clear
+ 1432  php artisan jwt:secret
+ 1433  php artisan cache
+ 1434  php artisan cache:clear
+ 1435  php artisan clear-compiled
+ 1436  php artisan jwt:secret
+ 1437  php artisan config
+ 1438  composer require php-open-source-saver/jwt-auth
+ 1439  php artisan vendor:publish --provider="PHPOpenSourceSaver\JWTAuth\Providers\LaravelServiceProvider"
+ 1440  php artisan
+ 1441  php artisan db:seed
+ 1442  php artisan jwt
+ 1443  php artisan migrate:fresh
+ 1444  php artisan db:seed
+ 1445  php artisan jwt:secret
+ 1446  php artisan
+ 1447  php artisan key:generate
+ 1448  php artisan db:wipe
+ 1449  php artisan db:seed
+ 1450  php artisan migrate:fresh
+ 1451  php artisan db:seed
+ 1452  php artisan jwt:secret
+ 1453  php artisan migrate:fresh
+ 1454  php artisan db:seed
+ 1455  php artisan jwt:secret
+ 1456  composer dumpautoload
+ 1457  cp vendor/tymon/jwt-auth/config/config.php config/
+ 1458  php artisan jwt:secret
+ 1459  composer dumpautoload
+ 1460  php artisan cache:clear
+ 1461  php artisan jwt:secret
+ 1462  cd php/library-app-api/
+ 1463  php artisan serve
+ 1464  php artisan serve
+ 1465  lampstart
+ 1466  cd js/library-app
+ 1467  code .
+ 1468  cd
+ 1469  cd php/library-app-api/
+ 1470  code .
+ 1471  cd
+ 1472  cd /var/www/html/NewUsingPHP/
+ 1473  code .
+ 1474  cd
+ 1475  cd js/library-app
+ 1476  ng s -o
+ 1477  cd js/library-app
+ 1478  ng generate service api-interceptor
+ 1479  cd
+ 1480  cd php/library-app-api/
+ 1481  composer require league/flysystem
+ 1482  php artisan route
+ 1483  php artisan route:list
+ 1484  cd
+ 1485  cd js/library-app
+ 1486  ng g guard auth
+ 1487  angular version
+ 1488  ng --help
+ 1489  ng version
+ 1490  history
+ 1491  lampstart
+ 1492  cd js/library-app
+ 1493  code .
+ 1494  cd
+ 1495  cd php/library-app-api/
+ 1496  code .
+ 1497  cd
+ 1498  cd /var/www/html/NewUsingPHP/
+ 1499  code .
+ 1500  cd
+ 1501  cd js/library-app
+ 1502  ng s -o
+ 1503  cd php/library-app-api/
+ 1504  php artisan serve
+ 1505  cd js/library-app
+ 1506  git status
+ 1507  git add .
+ 1508  git status
+ 1509  git commit -m "new"
+ 1510  git branch
+ 1511  git push origin main
+ 1512  cd
+ 1513  cd php/library-app-api/
+ 1514  git add
+ 1515  git add .
+ 1516  git status
+ 1517  git restore --staged storage/app/uploads/
+ 1518  git status
+ 1519  git commit -m "final api code"
+ 1520  git push origin main
+ 1521  history
+ 1522  cd php/library-app-api/
+ 1523  php artisan serve
+ 1524  lampstart
+ 1525  cd js/library-app
+ 1526  code .
+ 1527  cd
+ 1528  cd php/library-app-api/
+ 1529  code .
+ 1530  cd
+ 1531  cd /var/www/html/NewUsingPHP/
+ 1532  code .
+ 1533  cd
+ 1534  cd js/library-app
+ 1535  ng s -o
+ 1536  cd php/library-app-api/
+ 1537  php artisan serve
+ 1538  lampstart
+ 1539  cd js/library-app
+ 1540  code .
+ 1541  cd
+ 1542  cd php/library-app-api/
+ 1543  code .
+ 1544  cd
+ 1545  cd js/library-app
+ 1546  ng s -o
+ 1547  history

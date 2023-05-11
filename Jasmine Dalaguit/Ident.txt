@@ -1,0 +1,4 @@
+Identification 
+
+git config --global user.email "jasmine@flexie.com"
+git config --global user.name "jasmine"

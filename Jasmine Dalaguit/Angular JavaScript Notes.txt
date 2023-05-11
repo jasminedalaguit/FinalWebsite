@@ -1,0 +1,65 @@
+Notes base on my understanding: 
+
+
+ANGULAR JS
+
+- contains components
+
+
+- components contains
+
+	* selector - declaration sa variable
+	* template - ang porma ug sud
+	* optional set - css para sa template
+
+
+There are 2 ways to make a component: using Angular CLI or manually.
+
+
+* import statement
+
+import { Component } from '@angular/core';
+
+
+* @Component decorator
+
+@Component ({
+
+})
+
+
+* @Component selector 
+
+@Component ({
+selector: 'content',
+
+})
+
+
+* class statement 
+export class NameOfComponent {
+
+}
+
+
+- Angular CLI command
+
+* ng build
+* ng serve
+* ng generate
+* ng test
+* ng e2e
+* ng-app - for creating a module
+* ng new - for creating a new project or workspace
+* ng generate application application_name - for creating a sub-project within a project or workspace
+
+
+*ngFor - used as a template input variable 
+
+angular interpolation - {{ }}
+
+
+Command in VSCode 
+Ctrl + D - to add same words
+
+

@@ -1,0 +1,11 @@
+ALTER TABLE books 
+ADD CONSTRAINT fk_books_categories_categories_id
+  FOREIGN KEY (categories_id)
+  REFERENCES categories(id);
+
+
+
+
+ <input type="text" class="form-control" name="category_name" value="<?php echo $category_name; ?>">
+
+

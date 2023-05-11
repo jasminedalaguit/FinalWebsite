@@ -1,0 +1,19 @@
+Step 1 To install Apache, install the latest meta-package apache2 by running:
+
+* sudo apt update
+* sudo apt install apache2
+
+Step 2 — Adjusting the Firewall
+
+* sudo ufw app list
+
+Output
+Available applications:
+  Apache
+  Apache Full
+  Apache Secure
+  OpenSSH
+
+* sudo ufw allow 'Apache'
+* sudo ufw status
+

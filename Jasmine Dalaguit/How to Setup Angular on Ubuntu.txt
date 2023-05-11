@@ -1,0 +1,30 @@
+How to Setup Angular on Ubuntu
+
+1. Install Node.js
+	
+	-To install node js, use the Node Version Manager to install and manage multiple versions of Node.js.
+
+	*curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh
+	*curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+	*source ~/.bashrc
+	*nvm list-remote
+	*nvm install v18.14.2
+	*to verify that the install was successful using the same technique 
+	 from the other sections: node -v, output should be: v18.14.2 
+
+2. Update NPM
+
+	*sudo npm install npm@latest -g or npm install -g npm@9.5.1 --> base on your npm version
+
+3. Install the Angular CLI
+
+	*sudo npm install -g @angular/cli
+
+4. Create a workspace and initial Angular application
+
+	*ng new my-app
+
+5. Run the application
+
+	*cd my-app
+	*ng serve --open

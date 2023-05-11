@@ -1,0 +1,20 @@
+rule unique ignore
+add books
+edit books
+
+
+10th Week as an OJT in Flexi Finance Asia, Inc.
+
+* Performed HttpClient add/create request for books using POST method
+* Performed HttpClient update request for books using PUT method
+* Used rule validation with ignore by ID in Lumen, so that when updating data it will suggest a unique data, and when its own data is submitted it will proceed.
+
+
+11th Week as an OJT in Flexi Finance Asia, Inc.
+
+* Added success message and error message for authentication, crud in categories, and crud in books.
+* Made categories display in homepage dynamic
+* Added dropdown list in create and update books for the selecting of which category the books belong. 
+
+
+

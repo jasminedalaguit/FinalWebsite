@@ -1,0 +1,31 @@
+Server Requirements if not using Homestead
+
+* PHP >= 8.0
+* OpenSSL PHP Extension
+* PDO PHP Extension
+* Mbstring PHP Extension
+
+Installing Lumen
+
+* Install composer first:
+1.) cd ~
+curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+
+2.) HASH=`curl -sS https://composer.github.io/installer.sig`
+
+3.) echo $HASH
+
+4.) php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+
+5.) sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+6.) To test your installation, run: composer
+
+
+*Install Lumen by issuing the Composer create-project command in your terminal:
+
+composer create-project --prefer-dist laravel/lumen name_of_the_project
+
+* Serving the application in the terminal
+
+php -S localhost:8000 -t public

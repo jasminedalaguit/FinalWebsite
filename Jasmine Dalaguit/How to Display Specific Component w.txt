@@ -1,0 +1,22 @@
+How to Display Specific Component with Same URL localhost4200, Alter the Routing Modules
+
+* AppRoutingModule 
+
+const routes: Routes = [ 
+{ loadChildren: () => import('./home/home-routing.module').then(m => m.HomeRoutingModule), path: '', },
+]
+
+
+* ChildRoutingModule
+
+const routes: Routes = [
+{ path: '', component:NameOfComponentYouWantToDisplay }
+]
+
+
+Reminders: 
+Use path if you load components
+Use loadChildren if you load child routes
+
+
+

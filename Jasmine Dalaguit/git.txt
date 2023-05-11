@@ -1,0 +1,26 @@
+ 1318  git remote add origin https://github.com/jasminedalaguit/library-app-lumen.git
+ 1319  git push -u origin master
+ 1320  git push -u
+ 1321  git init
+ 1322  git add -A
+ 1323  git commit -m 'Added my project'
+ 1324  git remote add origin https://github.com/jasminedalaguit/lumen-library-app.git
+ 1325  git branch -M main
+ 1326  cd php/library-app-api/
+ 1327  git remote add origin https://github.com/jasminedalaguit/library-app-lumen.git
+ 1328  git branch -M main
+ 1329  git push -u origin main
+ 1330  git push -u -f origin main
+
+
+
+ 1333  git remote add origin https://github.com/jasminedalaguit/library-app-angular.git
+ 1334  git branch -M main
+ 1335  git push -u -f origin main
+ 1336  git push -u origin main
+ 1337  git init
+ 1338  git add -A
+ 1339  git commit -m 'Added my project'
+ 1340  git remote add origin git@github.com:jasminedalaguit/library-app-lumen.git
+ 1341  git remote add origin https://github.com/jasminedalaguit/library-app-angular.git
+ 1342  git push -u -f origin main

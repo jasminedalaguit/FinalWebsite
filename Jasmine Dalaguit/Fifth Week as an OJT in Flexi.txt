@@ -1,0 +1,8 @@
+Fifth Week as an OJT in Flexi Finance Asia, Inc.
+
+Build my website using AngularJS specifically: 
+
+Created a new workspace for my website
+Created module and routing module for the components of my website. 
+Specified components for the whole view of my website. 
+

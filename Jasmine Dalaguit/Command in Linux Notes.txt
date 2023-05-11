@@ -1,0 +1,8 @@
+rm - to delete a file
+rm -r to delete directory
+git clone link directory/folder name
+ctrl C - to exit in cat
+cat > filename - to make a file with file extension
+touch filename - to make an empty file
+chmod 777 filename.extension
+mv filename /filepath
